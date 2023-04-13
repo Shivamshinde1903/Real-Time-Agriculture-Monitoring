@@ -74,9 +74,9 @@ def main():
     st.sidebar.image(im)
     st.sidebar.title("About Us 🎈")
     st.sidebar.title(r"Vishwakarma Institue of Technology")
-    st.sidebar.title(r"Contributers🎉")    
-    st.sidebar.title(r"35)Sourjadip Pramanik")
-    st.sidebar.title(r"50) Vaibhav Kadam")
+    # st.sidebar.title(r"Contributers🎉")    
+    # st.sidebar.title(r"35)Sourjadip Pramanik")
+    # st.sidebar.title(r"50) Vaibhav Kadam")
 #     st.sidebar.headSsidebarer("Vishwakarma")
 #      <h4>Vishwakarma Institue of Technology</h4>
 # #        <h4>Electronics And Tellecommunications Engineering</h4>
@@ -152,13 +152,13 @@ def main():
 
 #     st.sidebar(htmlws)
     
-#     st.sidebar.info("Vishwakarma Institue of Technology")
-#     st.sidebar.text("Electronics And Tellecommunications Engineering")
-#     st.sidebar.text("SY-ET-D-B2_Grp1")
-#     st.sidebar.title("Contributers🎉")
-#     st.sidebar.text("35) Sourjadip Pramanik")
-#     st.sidebar.text("50) Vaibhav Kadam")
-    #st.sidebar.text("56) Vishal Phonde")
+    # st.sidebar.info("Vishwakarma Institue of Technology")
+    st.sidebar.text("Electronics And Tellecommunications Engineering")
+    st.sidebar.text("TY-ET-D-B1_Grp1")
+    st.sidebar.title("Contributers🎉")
+    st.sidebar.text("20) Sourjadip Pramanik")
+    st.sidebar.text(") Vaibhav Kadam")
+    st.sidebar.text("56) Vishal Phonde")
     st.sidebar.title("Give us your review here")
     st.sidebar.title("Feedback")
     result = st.sidebar.text_input(label="",value='Write Your Feedback Here',max_chars=600)
