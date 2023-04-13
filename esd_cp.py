@@ -46,7 +46,7 @@ def get_mail(message):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
     server.login('sourjadippramanik@gmail.com','hanwkkrjhynypdqq')
-    server.sendmail('sourjadippramanik@gmail.com','pramaniksourjadip@gmail.com',message)
+    server.sendmail('sourjadippramanik@gmail.com','anshul.surana20@vit.edu',message)
     print('Mail sent')
     server.quit()
 
@@ -64,13 +64,13 @@ def predict_gas(gas_b):
 
 def main():
     st.set_page_config(
-    page_title="IOT BLOCKCHAIN",
+    page_title="Agriculture",
     page_icon="✅",
     layout="wide",
     )
     #st.sidebar.markdown("# About 🎈")
-    st.sidebar.title("Supply chain Monitoring")
-    im = Image.open("images/download.jpg")
+    st.sidebar.title("Environment Monitoring")
+    im = Image.open("images/ESD.jpg")
     st.sidebar.image(im)
     st.sidebar.title("About Us 🎈")
     st.sidebar.title(r"Vishwakarma Institue of Technology")
@@ -156,19 +156,22 @@ def main():
     st.sidebar.text("Electronics And Tellecommunications Engineering")
     st.sidebar.text("TY-ET-D-B1_Grp1")
     st.sidebar.title("Contributers🎉")
+    st.sidebar.text("7) Shivam Shinde")
+    st.sidebar.text("14) Shrruti Suranje")
     st.sidebar.text("20) Sourjadip Pramanik")
-    st.sidebar.text(") Vaibhav Kadam")
-    st.sidebar.text("56) Vishal Phonde")
+    st.sidebar.text("21) Anshul Surana")
+    
+    
     st.sidebar.title("Give us your review here")
-    st.sidebar.title("Feedback")
-    result = st.sidebar.text_input(label="",value='Write Your Feedback Here',max_chars=600)
+#     st.sidebar.title("Feedback")
+    result = st.sidebar.text_input(label="",value='Feedback',max_chars=600)
     if len(result)>12:
         st.sidebar.success('Feedback sent Successfully')#'The output is {}'.format(result_g)'
         print(result)
     html_heading = """
     <div>
     
-    <h1 style="color:black;text-align:center;font-family:georgia;"> REAL  TIME  FOOD  MONITORING  SYSTEM</h1>
+    <h1 style="color:White;text-align:center;font-family:georgia;"> SMART AGRICULTURE</h1>
     </div>
     """
     st.markdown(html_heading,unsafe_allow_html=True)
