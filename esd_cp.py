@@ -205,22 +205,22 @@ def main():
         st.write("")
     
 
-    st.title("For geting Real Time Sensor Data")
+#     st.title("For geting Real Time Sensor Data")
 
-    m = st.markdown("""
-    <style>
-    div.stButton > button:first-child {
-        background-color: #00cc00;color:white;font-size:40px;height:3em;width:50%;border-radius:10px 10px 10px 10px;position: center;
-        left: 50%;
-    }
-    </style>""", unsafe_allow_html=True)
+#     m = st.markdown("""
+#     <style>
+#     div.stButton > button:first-child {
+#         background-color: #00cc00;color:white;font-size:40px;height:3em;width:50%;border-radius:10px 10px 10px 10px;position: center;
+#         left: 50%;
+#     }
+#     </style>""", unsafe_allow_html=True)
 
-    if  st.button("THINGSPEAK"):
-        think_url = st.secrets["thinkspeak_url"]
-        webbrowser.open(think_url)  # Go to example.com
+#     if  st.button("THINGSPEAK"):
+#         think_url = st.secrets["thinkspeak_url"]
+#         webbrowser.open(think_url)  # Go to example.com
 
    
-    st.header("Here, you can see the real time data of the food (BANANNA)")
+#     st.header("Here, you can see the real time data of the food (BANANNA)")
    
     st.markdown(html_temp,unsafe_allow_html=True)
     st.header("Moisture")
