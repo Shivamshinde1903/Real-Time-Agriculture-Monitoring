@@ -156,9 +156,12 @@ def main():
     st.sidebar.text("Electronics And Tellecommunications Engineering")
     st.sidebar.text("TY-ET-D-B1_Grp1")
     st.sidebar.title("Contributers🎉")
+    st.sidebar.text("7) Shivam Shinde")
+    st.sidebar.text("14) Shrruti Suranje")
     st.sidebar.text("20) Sourjadip Pramanik")
-    st.sidebar.text(") Vaibhav Kadam")
-    st.sidebar.text("56) Vishal Phonde")
+    st.sidebar.text("21) Anshul Surana")
+    
+    
     st.sidebar.title("Give us your review here")
     st.sidebar.title("Feedback")
     result = st.sidebar.text_input(label="",value='Write Your Feedback Here',max_chars=600)
