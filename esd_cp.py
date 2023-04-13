@@ -164,14 +164,14 @@ def main():
     
     st.sidebar.title("Give us your review here")
     st.sidebar.title("Feedback")
-    result = st.sidebar.text_input(label="",value='Write Your Feedback Here',max_chars=600)
+    result = st.sidebar.text_input(label="",value='Feedback',max_chars=600)
     if len(result)>12:
         st.sidebar.success('Feedback sent Successfully')#'The output is {}'.format(result_g)'
         print(result)
     html_heading = """
     <div>
     
-    <h1 style="color:White;text-align:center;font-family:georgia;"> Smart Agriculture</h1>
+    <h1 style="color:White;text-align:center;font-family:georgia;"> SMART AGRICULTURE</h1>
     </div>
     """
     st.markdown(html_heading,unsafe_allow_html=True)
