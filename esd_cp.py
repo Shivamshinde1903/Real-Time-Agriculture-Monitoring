@@ -179,7 +179,7 @@ def main():
 
     html_temp = """
     <div style="background-color:yellow;padding:10px">
-    <h2 style="color:black;text-align:center;">FOOD CONDITION ANALYSIS</h2>
+    <h2 style="color:black;text-align:center;">CROP CONDITION ANALYSIS</h2>
     </div>
     """
     st.write("")
@@ -198,29 +198,29 @@ def main():
 
     with col2:
        # image = Image.open('IOT-info 1.webp')
-        image = Image.open('images/1_aeaXMSzLw1tbsgSwUdZ1VA.jpeg')
+        image = Image.open('images/ESD 1.jpg')
         st.image(image, caption='Sensor Data on FOOD')
 
     with col3:
         st.write("")
     
 
-    st.title("For geting Real Time Sensor Data")
+#     st.title("For geting Real Time Sensor Data")
 
-    m = st.markdown("""
-    <style>
-    div.stButton > button:first-child {
-        background-color: #00cc00;color:white;font-size:40px;height:3em;width:50%;border-radius:10px 10px 10px 10px;position: center;
-        left: 50%;
-    }
-    </style>""", unsafe_allow_html=True)
+#     m = st.markdown("""
+#     <style>
+#     div.stButton > button:first-child {
+#         background-color: #00cc00;color:white;font-size:40px;height:3em;width:50%;border-radius:10px 10px 10px 10px;position: center;
+#         left: 50%;
+#     }
+#     </style>""", unsafe_allow_html=True)
 
-    if  st.button("THINGSPEAK"):
-        think_url = st.secrets["thinkspeak_url"]
-        webbrowser.open(think_url)  # Go to example.com
+#     if  st.button("THINGSPEAK"):
+#         think_url = st.secrets["thinkspeak_url"]
+#         webbrowser.open(think_url)  # Go to example.com
 
    
-    st.header("Here, you can see the real time data of the food (BANANNA)")
+#     st.header("Here, you can see the real time data of the food (BANANNA)")
    
     st.markdown(html_temp,unsafe_allow_html=True)
     st.header("Moisture")
@@ -453,15 +453,15 @@ def main():
     with c3:    
         st.write("")
 
-    st.title("My Realtime Food Quality Chart")
-    c1, c2, c3 = st.columns([0.8,6,0.8])
+#     st.title("My Realtime Food Quality Chart")
+#     c1, c2, c3 = st.columns([0.8,6,0.8])
 
-    with c1:
-        st.write("")
-    with c2:
-        st.write("Comming Soon : Done by Vaibhav")
-    with c3:    
-        st.write("")
+#     with c1:
+#         st.write("")
+#     with c2:
+#         st.write("Comming Soon : Done by Vaibhav")
+#     with c3:    
+#         st.write("")
 
 
     # html_gas = """
