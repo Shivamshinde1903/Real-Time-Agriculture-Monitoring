@@ -163,7 +163,7 @@ def main():
     
     
     st.sidebar.title("Give us your review here")
-    st.sidebar.title("Feedback")
+#     st.sidebar.title("Feedback")
     result = st.sidebar.text_input(label="",value='Feedback',max_chars=600)
     if len(result)>12:
         st.sidebar.success('Feedback sent Successfully')#'The output is {}'.format(result_g)'
