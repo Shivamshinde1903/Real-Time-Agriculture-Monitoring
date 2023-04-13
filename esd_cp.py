@@ -46,7 +46,7 @@ def get_mail(message):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
     server.login('sourjadippramanik@gmail.com','hanwkkrjhynypdqq')
-    server.sendmail('sourjadippramanik@gmail.com','pramaniksourjadip@gmail.com',message)
+    server.sendmail('sourjadippramanik@gmail.com','anshul.surana20@vit.edu',message)
     print('Mail sent')
     server.quit()
 
@@ -64,13 +64,13 @@ def predict_gas(gas_b):
 
 def main():
     st.set_page_config(
-    page_title="IOT BLOCKCHAIN",
+    page_title="Agriculture",
     page_icon="✅",
     layout="wide",
     )
     #st.sidebar.markdown("# About 🎈")
-    st.sidebar.title("Supply chain Monitoring")
-    im = Image.open("images/download.jpg")
+    st.sidebar.title("Environment Monitoring")
+    im = Image.open("images/ESD.jpg")
     st.sidebar.image(im)
     st.sidebar.title("About Us 🎈")
     st.sidebar.title(r"Vishwakarma Institue of Technology")
