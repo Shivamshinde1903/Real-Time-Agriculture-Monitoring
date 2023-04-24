@@ -374,12 +374,12 @@ def main():
 
     sheet_id = "1N32il1YsT69U9z-h7rP8FXK3BvdJyOodoLXhxCoRr8M"
     df_gsheet = pd.read_csv(f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv")
-    data1 = df_gsheet['Gas (ppm)']
-    data2 = df_gsheet['Temperature (*C)']
-    data3 = df_gsheet['Humidity (%)']
-    output1 = stats.zscore(data1)
-    output2 = stats.zscore(data2)
-    output3 = stats.zscore(data3)
+    # data1 = df_gsheet['Gas (ppm)']
+    # data2 = df_gsheet['Temperature (*C)']
+    # data3 = df_gsheet['Humidity (%)']
+    # output1 = stats.zscore(data1)
+    # output2 = stats.zscore(data2)
+    # output3 = stats.zscore(data3)
 
 
     with col1:
