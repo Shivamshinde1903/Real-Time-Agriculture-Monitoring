@@ -195,11 +195,13 @@ def main():
 
     with col1:
         st.write("")
+        st.write("")
+        st.write("")
 
     with col2:
        # image = Image.open('IOT-info 1.webp')
         image = Image.open('images/ESD 1.jpg')
-        st.image(image, caption='Sensor Data on FOOD')
+        st.image(image, caption='Sensor Data on Agriculture')
 
     with col3:
         st.write("")
