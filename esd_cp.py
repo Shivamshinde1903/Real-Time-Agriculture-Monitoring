@@ -171,7 +171,7 @@ def main():
     html_heading = """
     <div>
     
-    <h1 style="color:Black;text-align:center;font-family:georgia;"> SMART AGRICULTURE</h1>
+    <h1 style="color:Black;text-align:center;font-family:georgia;"> SMART AGRICULTURE111</h1>
     </div>
     """
     st.markdown(html_heading,unsafe_allow_html=True)
