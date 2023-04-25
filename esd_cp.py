@@ -229,8 +229,13 @@ def main():
     moisture = st.text_input(" ","Type Here")
     st.header("Temperature")
     temp = st.text_input("  ","Type Here")
-    st.header("Gas")
-    gas = st.text_input("   ","Type Here")
+    st.header("Humidity")
+    humidity = st.text_input("   ","Type Here")
+    st.header("Pressure")
+    pressure = st.text_input("   ","Type Here")
+    st.header("Lightlevel")
+    lightlevel = st.text_input("   ","Type Here")
+
     # gas = st.text_input("Gas","Type Here")
     result=""
 
