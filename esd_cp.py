@@ -397,10 +397,10 @@ def main():
     data2 = df_gsheet['Humidity %']
     data3 = df_gsheet['Pressure']
     data4 = df_gsheet['Lightlevel']
-    # output1 = stats.zscore(data1)
-    # output2 = stats.zscore(data2)
-    # output3 = stats.zscore(data3)
-    # output4 = stats.zscore(data4)
+    output1 = stats.zscore(data1)
+    output2 = stats.zscore(data2)
+    output3 = stats.zscore(data3)
+    output4 = stats.zscore(data4)
 
 
     with col1:
@@ -456,7 +456,7 @@ def main():
     with c2:
         x = df_gsheet['Date and Time']
         #y=  df_gsheet['gas']
-        y = [data1, data2, data3, data4]
+        y = [output1,output2,output3,output4]
         #fig = px.line(x=x ,y =y,labels={'x':'x', 'y':'sin(x)'})
         #fig = px.line(df_gsheet, x=x, y=y ,color=y)
 
