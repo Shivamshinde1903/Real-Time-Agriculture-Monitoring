@@ -351,23 +351,23 @@ def main():
     
     #st.plot()
     st.write("")
-    sheet_id = "16ciPmGxI4p6_a1VdE1lwNNplm1OF0-KZTFPCzczckoo"
+    sheet_id = "1N32il1YsT69U9z-h7rP8FXK3BvdJyOodoLXhxCoRr8M"
     df_gsheet = pd.read_csv(f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv")
-    df_humid = df_gsheet['Humidity (%)'].iloc[-1]
-    df_temp = df_gsheet['Temperature (*C)'].iloc[-1]
-    df_gas = df_gsheet['Gas (ppm)'].iloc[-1]
-    df_date = df_gsheet['Date'].iloc[-1]
-    df_time = df_gsheet['Time'].iloc[-1]
+    df_humid = df_gsheet['Humidity %'].iloc[-1]
+    df_temp = df_gsheet['Temperature'].iloc[-1]
+    df_pressure = df_gsheet['Pressure'].iloc[-1]
+    df_date = df_gsheet['Date and Time'].iloc[-1]
+    df_light = df_gsheet['Lightlevel'].iloc[-1]
     st.write("")
-    st.write("Latest Data : On {} at {} the food Humidity (%) is {} , Temperature (*C) is {} & Gas (ppm) is {}".format(df_date,df_time,df_humid,df_temp,df_gas))
+    st.write("Latest Data : On {} the Humidity (%) is {} , Temperature (*C) is {}, Pressure (ppm) is {} and Lightlevel is {}".format(df_date,df_humid,df_temp,df_pressure,df_light))
 
     st.write("")
 
 
 
-    if ((df_humid > 70 or df_humid < 70) and (df_temp <30 or df_gas >30) and (df_gas < 1500 or df_gas > 1500)):
-        message = 'Please check your food Environment. Make sure you have optimum moisture(70), temperature(30), and gas(1500)'
-        get_mail(message)
+    # if ((df_humid > 70 or df_humid < 70) and (df_temp <30 or df_gas >30) and (df_gas < 1500 or df_gas > 1500)):
+    #     message = 'Please check your food Environment. Make sure you have optimum moisture(70), temperature(30), and gas(1500)'
+    #     get_mail(message)
     
 
 
