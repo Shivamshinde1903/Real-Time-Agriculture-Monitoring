@@ -29,7 +29,7 @@ pickle_in = open("models/gassensor.pkl","rb")
 model=pickle.load(pickle_in)
 
 def predict_crop(temp,humidity,pressure,lightlevel):
-    moisture = int(moisture)
+    #moisture = int(moisture)
     temp = int(temp)
     humidity = int(humidity)
     pressure = int(pressure)
