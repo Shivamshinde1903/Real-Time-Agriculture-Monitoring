@@ -59,7 +59,7 @@ def get_mail(message):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
     server.login('sourjadippramanik@gmail.com','hanwkkrjhynypdqq')
-    server.sendmail('sourjadippramanik@gmail.com','anshul.surana20@vit.edu',message)
+    server.sendmail('sourjadippramanik@gmail.com','anshul.surana20@vit.edu''shivam.shinde20@vit.edu',message)
     print('Mail sent')
     server.quit()
 
@@ -378,9 +378,9 @@ def main():
 
 
 
-    # if ((df_humid > 70 or df_humid < 70) and (df_temp <30 or df_gas >30) and (df_gas < 1500 or df_gas > 1500)):
-    #     message = 'Please check your food Environment. Make sure you have optimum moisture(70), temperature(30), and gas(1500)'
-    #     get_mail(message)
+    if (df_humid>30 or df_temp>25):
+        message = 'The environmental conditions are not favourable for well being of the crop!'
+        get_mail(message)
     
 
 
