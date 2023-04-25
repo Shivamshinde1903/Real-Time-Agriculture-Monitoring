@@ -184,7 +184,7 @@ def main():
     html_heading = """
     <div>
     
-    <h1 style="color:Black;text-align:center;font-family:georgia;"> SMART AGRICULTURE11</h1>
+    <h1 style="color:Black;text-align:center;font-family:georgia;"> SMART AGRICULTURE</h1>
     </div>
     """
     st.markdown(html_heading,unsafe_allow_html=True)
@@ -266,7 +266,7 @@ def main():
     #header_t = st.title("Our DATASET FOR BANANNA")
 
     html_dataset = """
-    <a href = "https://docs.google.com/spreadsheets/d/16ciPmGxI4p6_a1VdE1lwNNplm1OF0-KZTFPCzczckoo/edit?usp=sharing"><h2 style="color:white;font-family:georgia;text-align:left;">Our DATASET FOR BANANNA ✅ </h2></a>
+    <a href = "https://docs.google.com/spreadsheets/d/16ciPmGxI4p6_a1VdE1lwNNplm1OF0-KZTFPCzczckoo/edit?usp=sharing"><h2 style="color:white;font-family:georgia;text-align:left;">Our DATASET ✅ </h2></a>
     """
     st.markdown(html_dataset,unsafe_allow_html=True)
 
@@ -464,7 +464,7 @@ def main():
         #plot.update_traces(marker=dict(color=col))
        
         
-        newnames = {'wide_variable_0':'Gas', 'wide_variable_1': 'Temp', 'wide_variable_2': 'Humidity','wide_variable_3': 'Hvdfvbdv'}
+        newnames = {'wide_variable_0':'Temperature', 'wide_variable_1': 'Humidity %', 'wide_variable_2': 'Pressure','wide_variable_3': 'Lightlevel'}
         plot.for_each_trace(lambda t: t.update(name = newnames[t.name],
                                       legendgroup = newnames[t.name],
                                       hovertemplate = t.hovertemplate.replace(t.name, newnames[t.name])
