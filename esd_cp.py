@@ -28,18 +28,31 @@ from PIL import Image
 pickle_in = open("models/gassensor.pkl","rb")
 model=pickle.load(pickle_in)
 
-def predict_food(moisture,temp,gas):
+def predict_crop(temp,humidity,pressure,lightlevel):
     moisture = int(moisture)
     temp = int(temp)
-    gas = int(gas)
+    humidity = int(humidity)
+    pressure = int(pressure)
+    lightlevel = int(lightlevel)
 
-    if (temp>30 and moisture>70 and gas>1500):
-        x="Reduce the Temp to 30 ,moisture to 70 and gas to 5000"
-    elif(temp<30 and moisture<70 and gas<1500):
-        x="Increase the temp to 30 and moisture to 70 and gas to 1500" 
-    elif(temp == 30 and moisture==70 and gas==1500):    
-        x="Your food is safe" 
-    
+    #for wheat
+    e1 = abs(temp - 22.5 + humidity - 55)
+    #for rice
+    e2 = abs(temp - 29 + humidity - 70)
+    #for maize
+    e3 = abs(temp - 20.5 + humidity - 60)
+    if (temp>=20 and temp<=25 and humidity>=50 and humidity<=60):
+        x="Wheat is the best suited crop for given environmental conditions"
+    elif (temp>=21 and temp<=37 and humidity>=60 and humidity<=80):
+        x="Rice is the best suited crop for given environmental conditions"
+    elif (temp>=14 and temp<=27 and humidity>=55 and humidity<=65):
+        x="Maize is the best suited crop for given environmental conditions"
+    elif (e1<e2 and e1<e3 and e1<10):
+        x="Wheat is the best suited crop for given environmental conditions"
+    elif (e2<e1 and e2<e3 and e2<10):
+        x="Rice is the best suited crop for given environmental conditions"
+    elif (e3<e2 and e3<e1 and e3<10):
+        x="Maize is the best suited crop for given environmental conditions"
     return x
 
 def get_mail(message):
@@ -241,7 +254,7 @@ def main():
 
     st.header('The Output is')
     if st.button("Predict"):
-        result=predict_food(moisture,temp,gas)
+        result=predict_crop(temp,humidity,pressure,lightlevel)
 
          
         st.success('{}'.format(result))#'The output is {}'.format(result_g)'
