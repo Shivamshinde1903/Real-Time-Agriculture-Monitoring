@@ -59,7 +59,7 @@ def get_mail(message):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
     server.login('sourjadippramanik@gmail.com','hanwkkrjhynypdqq')
-    server.sendmail('sourjadippramanik@gmail.com','anshul.surana20@vit.edu''shivam.shinde20@vit.edu',message)
+    server.sendmail('sourjadippramanik@gmail.com','shivamkshinde1903@gmail.com',message)
     print('Mail sent')
     server.quit()
 
